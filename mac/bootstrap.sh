@@ -65,3 +65,13 @@ nvm alias default v4.2.2
 
 # Get docker machine to create a local VM with docker engine installed.
 docker-machine create --driver virtualbox dev
+
+# Install Kubernetes tools
+brew install \
+  kubernetes-ctl \
+  kubernetes-helm \
+  kubectx
+
+# Install Dive for looking at container images
+brew tap wagoodman/dive
+brew install dive
